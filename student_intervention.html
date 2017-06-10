@@ -12604,7 +12604,8 @@ F1 score for test set: 0.6614.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> Support vector machines are classifiers that separate data linearly by using a hyperplane that separates points which have been brought out of plane by using a "Kernal trick". The model is trained by maximizing the margin. The margin is the distance between the hyperplane and nearest "support vector" data points.</p>
+<p><strong>Answer: </strong> In layman's terms, Support vector machines try to find the "middle line" which separates the students who received a passing grade and those who received a failing grade. However, it may be the case that there is no clear "middle line" that we can use to divide the values within the categories that describe each student. In this case the SVM model uses a "kernel trick" which essentially creates new categories which are dependent on the existing categories and we divide the classses based on those new categories. For example, if a new student is analyzed the "kernel trick" function would be performed on the information from that student's categories. Then depending on the output from that kernel trick we would be able to know if the student is likely to fail or pass.</p>
+<p>In more technical terms, support vector machines are classifiers that separate data linearly by using a hyperplane that separates points which have been brought out of plane by using a "Kernal trick". The model is trained by maximizing the margin. The margin is the distance between the hyperplane and nearest "support vector" data points.</p>
 
 </div>
 </div>
