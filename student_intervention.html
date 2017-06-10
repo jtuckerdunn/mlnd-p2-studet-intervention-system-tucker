@@ -12178,44 +12178,62 @@ Testing set has 95 samples.
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>Stochastic Gradient Descent (SGDC)</p>
+<p>The models were initially selected using the machine learning map on sklearn (<a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/">http://scikit-learn.org/stable/tutorial/machine_learning_map/</a>)</p>
+<p>We are predicting a category with &gt; 50 samples, labeled data, and &gt; 100K samples. So the support vector classifier was our first choice.</p>
+<p>Stochastic Gradient Descent (SGDC) (<a href="http://scikit-learn.org/stable/modules/sgd.html">http://scikit-learn.org/stable/modules/sgd.html</a>)</p>
 
 <pre><code>One real-world application where this model is used is that it has been applied to large scale and sparse machine learning problems occured in text classification and natural language processing.
 
-The strengths of this model are efficiency and easy of implementation
+The strengths of this model are efficiency and ease of implementation. There are lots of parameters that can be tuned 
 
-The weaknesses of this model are that it requres a number of hyperparameters and is sensitive to feature scaling.
+The weaknesses of this model are that it requires a number of hyperparameters so there is alot of tuning required and it can be difficult to initialize with good parameters. It is also sensitive to feature scaling.
 
-This model is a good candidate for this problem because it is an easy to implement classifier that is very efficient.
+This model is a good candidate for this problem because it is simialar to support vector machines and can easily scale to large problems. This could be helpful if more data was found and we wanted the compare the results of a large data set vs the current size data set.
 
 
 </code></pre>
-<p>Support Vector Machines</p>
+<p>Support Vector Machines (<a href="http://scikit-learn.org/stable/modules/svm.html">http://scikit-learn.org/stable/modules/svm.html</a>)</p>
 
 <pre><code>One real-world application where this model is used is text and hypertext categorization. This involves assigning a document in a "library" appropriate categories for organization.
 
-The strengths of this model are training is relatively easy and it scalles well to high dimensional data
+Some strengths of this model are it is effective in high dimensional spaces and different kernal functions allow the SVM to be very versatile.
 
-The weaknesses of this model are that it needs an appropriate kernel function to be selected to work well.
 
-This model is a good candidate for this problem because SFM is a useful method for classification.
+The weaknesses of this model are that it performs poorly if the number of features is much greater than the number of samples and it does not directly provide probability estimates.
+
+This model is a good candidate for this problem because SVM's are very versatile for different types of classification problems and works well with many features.
+
+
 
 
 </code></pre>
-<p>Decision Trees</p>
+<p>Decision Trees ((<a href="http://scikit-learn.org/stable/modules/svm.html">http://scikit-learn.org/stable/modules/svm.html</a>)</p>
 
 <pre><code>One real-world application where this model is used is for engineering design. In my undergrad civil engineering classes we would essentially create decision trees within excel using if functions to aid in the structural design of concrete beams.
 
-The strengths of this model are it is easy to interpret what the model is doing and explain to others.
+The strengths of this model are it is easy to understand and interpret and can be visualised. It is able to handle categorical data.
 
-The weaknesses of this model are that decision trees can easily overfit, and they can be extremely sensitive to small changes in the data.
+The weaknesses of this model are that decision trees can easily overfit with over-complex trees and they can be extremely sensitive to small changes in the data. There are also several concepts that are difficult for decision trees to represent such as XOR.
 
-This model is a good candidate for this problem because it is a simple classifier</code></pre>
+This model is a good candidate for this problem because it is a simple classifier where it is easy to evaluate the model visually and intuitively understand the effectiveness of the model.</code></pre>
 
 </div>
 </div>
@@ -12685,8 +12703,7 @@ Tuned model has a testing F1 score of 0.7891.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> The final model's F1 score was 1.0 for the training and .752 for the testing. This seems to be overfitting. The original model performed better.</p>
-
+<h4 id="Answer:--The-final-model's-F1-score-was-.8674-for-the-training-and-.7891-for-the-testing.-This-has-the-same-F1-score-as-the-untuned-model."><strong>Answer: </strong> The final model's F1 score was .8674 for the training and .7891 for the testing. This has the same F1 score as the untuned model.<a class="anchor-link" href="#Answer:--The-final-model's-F1-score-was-.8674-for-the-training-and-.7891-for-the-testing.-This-has-the-same-F1-score-as-the-untuned-model.">&#194;&#182;</a></h4>
 </div>
 </div>
 </div>
