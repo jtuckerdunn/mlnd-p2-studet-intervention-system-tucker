@@ -11804,7 +11804,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
+<p><strong>Answer: </strong> This is a classification problem because we are trying to classify whether a student is likely to fail or graduate. The output is yes or no.</p>
 
 </div>
 </div>
@@ -12185,13 +12185,37 @@ Testing set has 95 samples.
 <p><strong>Answer: </strong></p>
 <p>Stochastic Gradient Descent (SGDC)</p>
 
-<pre><code>One real-world application where 
+<pre><code>One real-world application where this model is used is that it has been applied to large scale and sparse machine learning problems occured in text classification and natural language processing.
+
+The strengths of this model are efficiency and easy of implementation
+
+The weaknesses of this model are that it requres a number of hyperparameters and is sensitive to feature scaling.
+
+This model is a good candidate for this problem because it is an easy to implement classifier that is very efficient.
+
 
 </code></pre>
 <p>Support Vector Machines</p>
+
+<pre><code>One real-world application where this model is used is text and hypertext categorization. This involves assigning a document in a "library" appropriate categories for organization.
+
+The strengths of this model are training is relatively easy and it scalles well to high dimensional data
+
+The weaknesses of this model are that it needs an appropriate kernel function to be selected to work well.
+
+This model is a good candidate for this problem because SFM is a useful method for classification.
+
+
+</code></pre>
 <p>Decision Trees</p>
 
-<pre><code>One real world application where deicioon trees can be utilized is in </code></pre>
+<pre><code>One real-world application where this model is used is for engineering design. In my undergrad civil engineering classes we would essentially create decision trees within excel using if functions to aid in the structural design of concrete beams.
+
+The strengths of this model are it is easy to interpret what the model is doing and explain to others.
+
+The weaknesses of this model are that decision trees can easily overfit, and they can be extremely sensitive to small changes in the data.
+
+This model is a good candidate for this problem because it is a simple classifier</code></pre>
 
 </div>
 </div>
@@ -12562,7 +12586,7 @@ F1 score for test set: 0.6614.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
+<p><strong>Answer: </strong> Support vector machines are classifiers that separate data linearly by using a hyperplane that separates points which have been brought out of plane by using a "Kernal trick". The model is trained by maximizing the margin. The margin is the distance between the hyperplane and nearest "support vector" data points.</p>
 
 </div>
 </div>
@@ -12592,7 +12616,7 @@ F1 score for test set: 0.6614.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;GridSearchCV&#39; and &#39;make_scorer&#39;</span>
@@ -12600,7 +12624,7 @@ F1 score for test set: 0.6614.
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">make_scorer</span>
 
 <span class="c1"># TODO: Create the parameters list you wish to tune</span>
-<span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;gamma&#39;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span> <span class="s1">&#39;C&#39;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">]}</span>
+<span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;gamma&#39;</span><span class="p">:[</span><span class="mi">0</span><span class="p">,</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">],</span> <span class="s1">&#39;C&#39;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">1000</span><span class="p">]}</span>
 
 <span class="c1"># TODO: Initialize the classifier</span>
 <span class="n">clf</span> <span class="o">=</span> <span class="n">clf_B</span>
@@ -12636,10 +12660,10 @@ F1 score for test set: 0.6614.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Made predictions in 0.0070 seconds.
-Tuned model has a training F1 score of 1.0000.
-Made predictions in 0.0030 seconds.
-Tuned model has a testing F1 score of 0.7582.
+<pre>Made predictions in 0.0050 seconds.
+Tuned model has a training F1 score of 0.8674.
+Made predictions in 0.0010 seconds.
+Tuned model has a testing F1 score of 0.7891.
 </pre>
 </div>
 </div>
